@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize - Grid</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel = "stylesheet" href="css/poken.css">
+ </head>
+
+
+ <body>
+
+       
+            <nav>
+                <div class="nav-wrapper deep-purple darken-2">
+                    <!---Logo-->
+                    <a href="#" class="brand-log">Logo </a>
+
+                        <!--Ícone para abrir no mobile-->
+                        <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                        </a>
+
+                    <ul id="navbar-items"class="right hide-on-med-and-down" > <!--essa classe vai fazer com que o menu seja responsivo e sumir dos dispositos que tiverem tamanho medio e menores-->
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li>
+                            <a class="dropdown-trigger" data-target="dropdown-menu" href="#">
+                            Contatos <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                         
+                </div>    
+            </nav>
+            
+
+       
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+            <header>
+                
+                    <h1 class="titulo center-align">Sistema Pokémon</h1>
+                
+            </header>
+            <main>
+                <section class="container">
+                    <h2 class="titulo center-align">Meus personagens</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Peso(kg)</th>
+                                <th>Altura</th>
+                                <th>Genero</th>
+                                <th>Categoria</th>
+                                <th>Habilidades</th>
+                                
+                                
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-personagens">
+                            <tr class="personagem" id="primeiro-personagem">
+                                <td class="info-nome">Nidorino</td>
+                                <td class="info-peso">43.0lbs</td>
+                                <td class="info-altura">2 '11"</td>
+                                <td class="info-gênaro">Masculino</td>
+                                <td class="info-categoria">Pin do veneno</td>
+                                <td class="info-habilidades">Poison Point / Rivalidade</td>
+                             
+                            </tr>
+    
+                            <tr class="personagem" >
+                                <td class="info-nome">Copperajah</td>
+                                <td class="info-peso">1433,0 lbs</td>
+                                <td class="info-altura">9'10"</td>
+                                <td class="info-genoro">Masculino</td>
+                                <td class="info-categoria">Copperderm</td>
+                                <td class="info-habilidades">Força pura</td>
+                              
+
+                            </tr>
+    
+                            <tr class="personagem" >
+                                <td class="info-nome">Dottler</td>
+                                <td class="info-peso">43. lbs</td>
+                                <td class="info-altura">9'10"</td>
+                                <td class="info-genoro">Masculino</td>
+                                <td class="info-categoria">Radome</td>
+                                <td class="info-habilidades">Olhos compostos / Enchame</td>
+                             
+                            </tr>
+    
+                            <tr class="personagem" >
+                                <td class="info-nome">Sylveon</td>
+                                <td class="info-peso">51,8 lbs</td>
+                                <td class="info-altura">3'8"</td>
+                                <td class="info-genoro">Masculino</td>
+                                <td class="info-categoria">Entrelaçamento</td>
+                                <td class="info-habilidades">Charme fofo</td>
+                               
+                            </tr>
+
+
+                     
+                        </tbody>
+                    </table>
+    
+                </section>
+            </main>
+    <!--///////////////////////////////////////////////////////////////////////////////////////-->
+        </div>
+     <!--Menu Mobile-->
+    
+  
+
+     <section class="container">
+        <h2 id="titulo-form" class="titulo center-align">Adicionar novo personagem</h2>
+
+        <form id="form-adiciona">
+            <div class="grupo">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="digite o nome do seu personagem" class="campo">
+            </div>
+            
+            <div class="grupo">
+                <label for="peso">Peso:</label>
+                <input id="peso" name="peso" type="text" placeholder="digite o peso do seu personagem" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura:</label>
+                <input id="altura" name="altura" type="text" placeholder="digite a altura do seu personagem" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="genero">Genero:</label>
+                <input id="genero" name="genero" type="text" placeholder="digite o Genero do seu personagem" class="campo campo-medio">
+            </div>
+
+            <div class="grupo">
+                <label for="categoria">Categoria:</label>
+                <input id="categoria" name="categoria" type="text" placeholder="digite a Categoria do seu personagem" class="campo campo-medio">
+            </div>
+
+            <div class="grupo">
+                <label for="habilidades">Habilidades:</label>
+                <input id="habilidades" name="habilidades" type="text" placeholder="digite as Habilidades do seu personagem" class="campo campo-medio">
+            </div>
+
+            
+    
+    
+            <button id="adicionar-personagem" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
+    
+
+
+     
+     
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+     <script src="js/valida.js"></script>
+     <script src="js/poken.js"></script>
+
+    </body>
+    </html>
+
+    
